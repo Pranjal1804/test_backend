@@ -7,6 +7,6 @@ app.get('/',(req,res)=>{
 app.get('/test',(req,res)=>{
     res.send("Page1")
 })
-app.listen(port,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(`This app is listening in port${port}`)
 })
